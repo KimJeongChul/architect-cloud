@@ -4,7 +4,7 @@
   "description": "This Lambda function will set permissions to make transcoded videos publically available",
   "main": "SetPermissions.js",
   "scripts": {
-    "deploy": "aws lambda update-function-code --function-name [ARN-LAMBDA-set-permissions] --zip-file fileb://Lambda-Deployment.zip",
+    "deploy": "aws lambda update-function-code --function-name [ARN-LAMBDA-SET-PERMISSIONS] --zip-file fileb://Lambda-Deployment.zip",
     "predeploy": "zip -r Lambda-Deployment.zip * -x *.zip *.json *.log"
   },
   "dependencies": {
