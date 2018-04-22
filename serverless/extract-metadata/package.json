@@ -1,0 +1,15 @@
+{
+  "name": "extract-metadata",
+  "version": "1.0.0",
+  "description": "This Lambda function will extract metadata from a file using ffmpeg",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "aws lambda update-function-code --function-name [ARN-LAMBDA-EXTRACT-METADATA-FUNCTION] --zip-file fileb://Lambda-Deployment.zip",
+    "predeploy":"zip -r Lambda-Deployment.zip * -x *.zip *.json *.log"
+  },
+  "dependencies": {
+    "aws-sdk": "latest"
+  },
+  "author": "Kim JeongChul",
+  "license": "BSD-2-Clause"
+}
